@@ -4,39 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matheus - Página Inicial</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
-        /* Reseta o estilo padrão do navegador */
+        /* Estilos Gerais */
         body, html {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif; /* Define uma fonte padrão */
+            font-family: 'Roboto', sans-serif;
+            background-color: #1e2124; /* Fundo cinza bem escuro */
+            color: #f0f0f0; /* Texto claro */
+            text-align: center; /* Centraliza todo o texto por padrão */
         }
 
-        /* Estilo da barra de navegação */
+        /* Barra de navegação */
         .navbar {
-            background-color: #333; /* Cor de fundo da barra (cinza escuro) */
-            overflow: hidden; /* Garante que o conteúdo não saia da barra */
-            width: 100%; /* Largura total */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave */
+            background-color: #282c30;
+            overflow: hidden;
+            width: 100%;
+            text-align: left; /* Alinha o texto da navbar à esquerda */
         }
 
-        /* Estilo do nome dentro da barra */
         .navbar a {
-            float: left; /* Alinha o nome à esquerda */
-            display: block; /* Faz o link ocupar todo o espaço do container */
-            color: white; /* Cor do texto (branco) */
-            text-align: center; /* Centraliza o texto (útil para outros links) */
-            padding: 14px 20px; /* Espaçamento interno (vertical e horizontal) */
-            text-decoration: none; /* Remove o sublinhado do link */
-            font-size: 18px; /* Tamanho da fonte */
-            font-weight: bold; /* Deixa o texto em negrito */
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
         }
 
-        /* Estilo para o conteúdo da página (opcional, só para exemplo) */
-        .content {
+        /* Conteúdo Antigo */
+        .welcome-content {
+            padding: 40px 20px;
+        }
+
+        /* Container que centraliza o perfil */
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
-            margin-top: 60px; /* Adiciona um espaço para não ficar atrás da barra */
-            text-align: center;
+        }
+
+        /* === Cartão de Perfil === */
+        .profile-card {
+            background-color: #282c30;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            width: 100%;
+            max-width: 380px;
+            padding: 30px;
+            border: 1px solid #42464d;
+        }
+
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #4f545c;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .profile-title {
+            margin: 0;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .profile-subtitle {
+            font-size: 16px;
+            color: #aeb3b8;
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+
+        .profile-stats {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid #42464d;
+            padding-top: 25px;
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .stat-icon {
+            font-size: 28px;
+        }
+        
+        .fa-trophy { color: #ffc107; }
+        .fa-star { color: #00bfff; }
+
+        .stat-info {
+            text-align: left;
+        }
+
+        .stat-value {
+            font-size: 20px;
+            font-weight: 700;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: #aeb3b8;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -46,9 +129,38 @@
     <a href="#">Matheus</a>
 </div>
 
-<div class="content">
+<div class="welcome-content">
     <h1>Bem-vindo ao meu site!</h1>
     <p>Esta é a página inicial do meu repositório no GitHub Pages.</p>
+</div>
+
+<div class="profile-container">
+    <div class="profile-card">
+        
+        <img src="https://github.com/mdo.png" alt="Foto de Perfil" class="profile-avatar">
+        
+        <h1 class="profile-title">Matheus</h1>
+        <p class="profile-subtitle">Desenvolvedor Web</p>
+
+        <div class="profile-stats">
+            <div class="stat">
+                <i class="fa-solid fa-trophy stat-icon"></i>
+                <div class="stat-info">
+                    <span class="stat-value">1258</span>
+                    <span class="stat-label">Rating</span>
+                </div>
+            </div>
+            
+            <div class="stat">
+                <i class="fa-solid fa-star stat-icon"></i>
+                <div class="stat-info">
+                    <span class="stat-value">4.8K</span>
+                    <span class="stat-label">XP</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 </body>
