@@ -1,0 +1,36 @@
+
+body {
+    margin: 0; /* Remove margens padrão do navegador */
+    font-family: sans-serif; /* Define uma fonte padrão */
+    background-color: #3498db; 
+}
+
+.navbar {
+    display: flex; 
+    justify-content: space-between; /* Joga a marca pra esquerda e os links pra direita */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 15px 5%; /* Espaçamento interno (15px em cima/baixo, 5% nas laterais) */
+    background-color: #212529; 
+    color: #f8f9fa;
+}
+
+.nav-brand {
+    display: flex;
+    flex-direction: column; /* Coloca o nome em cima do subtítulo */
+}
+
+.nav-brand strong {
+    font-size: 1.5rem; /* Tamanho do nome */
+}
+
+.nav-brand span {
+    font-size: 0.9rem;
+    color: #adb5bd; /* Um cinza mais claro para o subtítulo */
+}
+
+.nav-links a {
+    color: #f8f9fa; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    margin-left: 25px; /* Espaçamento entre os links */
+    font-weight: bold;
+}
