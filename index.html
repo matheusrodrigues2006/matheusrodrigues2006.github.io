@@ -5,53 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matheus - Página Inicial</title>
     
-    <link rel="stylesheet" href="style.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
     <style>
-        /* Estilos Gerais */
         body, html {
             margin: 0;
             padding: 0;
             font-family: 'Roboto', sans-serif;
-            background-color: #3175b9; /* Fundo cinza bem escuro */
-            color: #c8e923; /* Texto claro */
-            text-align: center; /* Centraliza todo o texto por padrão */
+            background-color: #3175b9;
+            color: #c8e923;
         }
 
-        /* Barra de navegação */
         .navbar {
             background-color: #282c30;
-            overflow: hidden;
-            width: 100%;
-            text-align: left; /* Alinha o texto da navbar à esquerda */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%;
+            color: white;
+        }
+        
+        .nav-brand {
+            display: flex;
+            flex-direction: column;
         }
 
-        .navbar a {
-            display: inline-block;
+        .nav-brand strong {
+            font-size: 1.5rem;
+        }
+
+        .nav-brand span {
+            font-size: 0.9rem;
+            color: #aeb3b8;
+        }
+
+        .nav-links a {
             color: white;
-            padding: 14px 20px;
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
+            margin-left: 25px;
         }
-
         
-        .welcome-content {
-            padding: 40px 20px;
-        }
-
-        /* Container que centraliza o perfil */
-        .profile-container {
+        .main-content {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 40px 20px;
+            gap: 30px;
         }
-
         
         .profile-card {
             background-color: #282c30;
@@ -61,6 +66,7 @@
             max-width: 380px;
             padding: 30px;
             border: 1px solid #42464d;
+            text-align: center;
         }
 
         .profile-avatar {
@@ -103,8 +109,8 @@
             font-size: 28px;
         }
         
-        .fa-trophy { color: #4ba4b8; }
-        .fa-star { color: #0b617d; }
+        .fa-trophy { color: #f1c40f; }
+        .fa-star { color: #3498db; }
 
         .stat-info {
             text-align: left;
@@ -121,12 +127,32 @@
             color: #aeb3b8;
             text-transform: uppercase;
         }
-        .usp-logo {
-            width: 150px; ;
-            height: auto ;
-            float: top;
-            margin: 15px;
+
+        .side-assets {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
         }
+
+        .usp-logo {
+            width: 100px;
+            height: auto;
+        }
+        
+        .flag-placeholder {
+            width: 100px;
+            height: 67px; /* Proporção aproximada da bandeira do Brasil */
+            background-color: #4f545c;
+            border: 2px dashed #aeb3b8;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            color: #aeb3b8;
+        }
+
     </style>
 </head>
 <body>
@@ -136,7 +162,6 @@
         <strong>Matheus</strong>
         <span>Computer Scientist</span>
     </div>
-
     <nav class="nav-links">
         <a href="#">Currículo</a>
         <a href="#">Projetos</a>
@@ -144,38 +169,36 @@
     </nav>
 </header>
 
-<div class="welcome-content">
-    <h1>Bem-vindo ao meu site!</h1>
-    <p>Esta é a página inicial do meu repositório no GitHub Pages.</p>
-</div>
-
-<div class="profile-container">
+<div class="main-content">
     <div class="profile-card">
-        
         <img src="images/firouzjalogo.jpeg" alt="Foto de Perfil" class="profile-avatar">
         <h1 class="profile-title">Matheus</h1>
         <p class="profile-subtitle">Computer Scientist</p>
-
         <div class="profile-stats">
             <div class="stat">
                 <i class="fa-solid fa-trophy stat-icon"></i>
                 <div class="stat-info">
-                    <span class="stat-value"></span>
-                    <span class="stat-label"></span>
+                    <span class="stat-value">1258</span>
+                    <span class="stat-label">RATING</span>
                 </div>
             </div>
-            
             <div class="stat">
                 <i class="fa-solid fa-star stat-icon"></i>
                 <div class="stat-info">
-                    <span class="stat-value"></span>
-                    <span class="stat-label"></span>
+                    <span class="stat-value">4.8K</span>
+                    <span class="stat-label">XP</span>
                 </div>
             </div>
         </div>
     </div>
+    
+    <div class="side-assets">
+        <img class="usp-logo" src="images/usp-logo-transp.png" alt="Logo da USP">
+        <div class="flag-placeholder">
+            <span>Bandeira</span>
+        </div>
+    </div>
 </div>
-<img class="usp-logo" src="images/usp-logo-transp.png">
+<script src="script.js"></script>
 </body>
-
 </html>
