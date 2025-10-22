@@ -20,7 +20,7 @@
         }
 
         .navbar {
-            background-color: #282c30;
+            background-color: #1f3b57;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -61,7 +61,7 @@
         .profile-card {
             background-color: #282c30;
             border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 8px 20px rgba(15, 108, 124, 0.4);
             width: 100%;
             max-width: 380px;
             padding: 30px;
@@ -169,8 +169,60 @@
     </nav>
 </header>
 
-<div class="main-content">
-    <div class="profile-card">
+<div class="page-container">
+    <main class="main-column">
+        <div style="background-color:#262421; padding:20px; border-radius:8px;">
+<section class="profile-header">
+    <img src="images/firouzjalogo.jpeg" alt="Avatar" class="profile-header-avatar">
+    <div class="profile-header-info">
+        <div class="profile-name-line">
+            <h2>Matheus Rodrigues</h2>
+            <a href="#" class="edit-button">Editar perfil</a>
+        </div>
+        <p class="profile-status">Insira um status aqui 📝</p>
+        <div class="profile-meta">
+            <span>Entrou em <strong>22 de out. de 2025</strong></span>
+            <span>•</span>
+            <span>Online agora</span>
+        </div>
+    </div>
+</section>
+        </div>
+        <div style="background-color:#262421; padding:20px; border-radius:8px;">
+                <section class="stats-container">
+    <div class="stat-box">
+        <i class="fa-solid fa-gauge-simple stat-icon"></i>
+        <div class="stat-details">
+            <span class="stat-title">Rápida</span>
+            <strong class="stat-value">913</strong>
+        </div>
+        <div class="stat-graph-placeholder"></div>
+    </div>
+    <div class="stat-box">
+        <i class="fa-solid fa-bolt stat-icon"></i>
+        <div class="stat-details">
+            <span class="stat-title">Blitz</span>
+            <strong class="stat-value">910</strong>
+        </div>
+        <div class="stat-graph-placeholder"></div>
+    </div>
+    <div class="stat-box">
+        <i class="fa-solid fa-rocket stat-icon"></i>
+        <div class="stat-details">
+            <span class="stat-title">Bullet</span>
+            <strong class="stat-value">706</strong>
+        </div>
+        <div class="stat-graph-placeholder"></div>
+    </div>
+</section>
+            </div>
+        </main>
+        <aside class="sidebar-column">
+            <h3>Barra Lateral</h3>
+            <p>informações adicionais</p>
+        </aside>
+
+    </div>
         <img src="images/firouzjalogo.jpeg" alt="Foto de Perfil" class="profile-avatar">
         <h1 class="profile-title">Matheus</h1>
         <p class="profile-subtitle">Computer Scientist</p>
@@ -178,15 +230,15 @@
             <div class="stat">
                 <i class="fa-solid fa-trophy stat-icon"></i>
                 <div class="stat-info">
-                    <span class="stat-value">1258</span>
-                    <span class="stat-label">RATING</span>
+                    <span class="stat-value"></span>
+                    <span class="stat-label"></span>
                 </div>
             </div>
             <div class="stat">
                 <i class="fa-solid fa-star stat-icon"></i>
                 <div class="stat-info">
-                    <span class="stat-value">4.8K</span>
-                    <span class="stat-label">XP</span>
+                    <span class="stat-value"></span>
+                    <span class="stat-label"></span>
                 </div>
             </div>
         </div>
