@@ -64,7 +64,7 @@ body {
             padding: 15px;
         }
         .profile-header {
-            background-color: #262421;
+            background-color: #fdfbf9;
             border-radius: 8px;
             padding: 20px;
             display: flex;
@@ -125,73 +125,41 @@ body {
         }
         
 
-        .duolingo-widget {
-            margin-top: 25px; 
-            border-top: 1px solid #444;
-            padding-top: 15px;
-        }
-
-        .widget-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .duolingo-owl {
-            width: 35px;
-            height: auto;
-        }
-
-        .widget-header h4 {
-            margin: 0;
-            font-size: 18px;
-            color: #efefef;
+        .language-stats {
+            background-color: #ffffff; /* O fundo branco que você queria */
+            color: #262421; /* Texto escuro para contrastar */
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px; /* Espaço para separar das caixas de stats acima */
         }
 
         .language-list {
-            list-style: none; 
+            list-style: none;
             padding: 0;
             margin: 0;
             display: flex;
             flex-direction: column;
-            gap: 18px; 
+            gap: 15px; /* Espaço entre cada linha de idioma */
         }
 
-        .language-info {
+        .language-list li {
             display: flex;
-            justify-content: space-between; 
+            justify-content: space-between; /* Alinha nome/bandeira à esquerda e score à direita */
             align-items: center;
-            margin-bottom: 6px;
-            font-size: 15px;
         }
-        
+
         .language-name-flag {
             display: flex;
             align-items: center;
-            gap: 8px; 
+            gap: 10px; /* Espaço entre a bandeira e o nome */
         }
 
         .language-flag {
-            width: 20px;
+            width: 25px;
             border-radius: 3px;
         }
 
         .language-score {
+            font-size: 20px;
             font-weight: bold;
-            color: #ccc;
-        }
-
-        .progress-bar-container {
-            width: 100%;
-            background-color: #4a4744; 
-            border-radius: 5px;
-            height: 10px;
-            overflow: hidden; 
-        }
-
-        .progress-bar {
-            height: 100%;
-            background-color: #58cc02; 
-            border-radius: 5px;
         }
