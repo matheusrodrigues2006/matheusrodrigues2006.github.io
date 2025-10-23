@@ -104,3 +104,22 @@ body {
             font-size: 14px;
             color: #9e9e9e;
         }
+    
+
+        .name-and-badges {
+            display: flex; /* O segredo para alinhar tudo em linha */
+            align-items: center; /* Alinha verticalmente os itens no centro */
+            gap: 12px; /* Cria um espaço entre o logo, o nome e a bandeira */
+        }
+
+        .profile-title-badge {
+            height: 24px; /* Altura do logo da USP */
+            width: auto; /* Largura automática para não distorcer */
+        }
+
+        .profile-country-flag {
+            height: 20px; /* Altura da bandeira */
+            width: auto;
+            border-radius: 3px; /* Borda levemente arredondada */
+            border: 1px solid #444; /* Borda sutil para destacar */
+        }
