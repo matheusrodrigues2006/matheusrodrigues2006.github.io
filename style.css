@@ -107,19 +107,91 @@ body {
     
 
         .name-and-badges {
-            display: flex; /* O segredo para alinhar tudo em linha */
-            align-items: center; /* Alinha verticalmente os itens no centro */
-            gap: 12px; /* Cria um espaço entre o logo, o nome e a bandeira */
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
         }
 
         .profile-title-badge {
-            height: 24px; /* Altura do logo da USP */
-            width: auto; /* Largura automática para não distorcer */
+            height: 24px; 
+            width: auto; 
         }
 
         .profile-country-flag {
-            height: 20px; /* Altura da bandeira */
+            height: 20px; 
             width: auto;
-            border-radius: 3px; /* Borda levemente arredondada */
-            border: 1px solid #444; /* Borda sutil para destacar */
+            border-radius: 3px; 
+            border: 1px solid #444; 
+        }
+        
+
+        .duolingo-widget {
+            margin-top: 25px; 
+            border-top: 1px solid #444;
+            padding-top: 15px;
+        }
+
+        .widget-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .duolingo-owl {
+            width: 35px;
+            height: auto;
+        }
+
+        .widget-header h4 {
+            margin: 0;
+            font-size: 18px;
+            color: #efefef;
+        }
+
+        .language-list {
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 18px; 
+        }
+
+        .language-info {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            margin-bottom: 6px;
+            font-size: 15px;
+        }
+        
+        .language-name-flag {
+            display: flex;
+            align-items: center;
+            gap: 8px; 
+        }
+
+        .language-flag {
+            width: 20px;
+            border-radius: 3px;
+        }
+
+        .language-score {
+            font-weight: bold;
+            color: #ccc;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            background-color: #4a4744; 
+            border-radius: 5px;
+            height: 10px;
+            overflow: hidden; 
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: #58cc02; 
+            border-radius: 5px;
         }
