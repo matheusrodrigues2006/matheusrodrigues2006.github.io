@@ -1,9 +1,12 @@
 
 body {
-    margin: 0; /* Remove margens padrão do navegador */
-    font-family: sans-serif; /* Define uma fonte padrão */
-    background-color: #3498db; 
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
+
 
 .navbar {
     display: flex; 
