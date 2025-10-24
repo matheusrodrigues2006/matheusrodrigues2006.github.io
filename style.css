@@ -186,3 +186,12 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
+.nome {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #0077ff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
