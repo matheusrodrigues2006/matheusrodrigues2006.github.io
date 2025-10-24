@@ -166,3 +166,23 @@ body {
             font-size: 20px;
             font-weight: bold;
         }
+nav a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: white;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
