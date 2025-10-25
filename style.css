@@ -1,6 +1,5 @@
 
 body {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
   font-family: 'Poppins', sans-serif;
   color: white;
   margin: 0;
@@ -10,59 +9,59 @@ body {
 
 .navbar {
     display: flex; 
-    justify-content: space-between; /* Joga a marca pra esquerda e os links pra direita */
-    align-items: center; /* Centraliza os itens verticalmente */
-    padding: 15px 5%; /* Espaçamento interno (15px em cima/baixo, 5% nas laterais) */
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 5%; 
     background-color: #212529; 
     color: #f8f9fa;
 }
 
 .nav-brand {
     display: flex;
-    flex-direction: column; /* Coloca o nome em cima do subtítulo */
+    flex-direction: column; 
 }
 
 .nav-brand strong {
-    font-size: 1.5rem; /* Tamanho do nome */
+    font-size: 1.5rem; 
 }
 
 .nav-brand span {
     font-size: 0.9rem;
-    color: #adb5bd; /* Um cinza mais claro para o subtítulo */
+    color: #adb5bd; 
 }
 
 .nav-links a {
-    color: #f8f9fa; /* Cor dos links */
-    text-decoration: none; /* Remove o sublinhado */
-    margin-left: 25px; /* Espaçamento entre os links */
+    color: #f8f9fa; 
+    text-decoration: none; 
+    margin-left: 25px; 
     font-weight: bold;
 }
-/* Altere a cor de fundo do body */
+
         body, html {
             margin: 0;
             padding: 0;
             font-family: 'Roboto', sans-serif;
-            background-color: #312e2b; /* Cor de fundo escura do */
-            color: #efefef; /* Cor de texto principal  */
+            background-color: #312e2b; 
+            color: #efefef; 
         }
         
-        /* Nova estrutura da página */
+        
         .page-container {
             display: flex;
-            padding: 20px 5%; /* Espaçamento nas laterais da página */
+            padding: 20px 5%; 
             gap: 20px;
         }
 
         .main-column {
-            flex: 1; /* Faz a coluna principal ocupar o máximo de espaço possível */
+            flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 20px; /* Espaço entre os elementos dentro da coluna principal */
+            gap: 20px; 
         }
 
         .sidebar-column {
-            width: 300px; /* Largura fixa para a barra lateral */
-            background-color: #262421; /* Cor de fundo da barra lateral */
+            width: 300px; 
+            background-color: #262421; 
             border-radius: 8px;
             padding: 15px;
         }
@@ -129,11 +128,11 @@ body {
         
 
         .language-stats {
-            background-color: #24ce15; /* O fundo branco que você queria */
-            color: #262421; /* Texto escuro para contrastar */
+            background-color: #24ce15; 
+            color: #262421;
             border-radius: 8px;
             padding: 20px;
-            margin-top: 20px; /* Espaço para separar das caixas de stats acima */
+            margin-top: 20px; 
         }
 
         .language-list {
@@ -142,19 +141,19 @@ body {
             margin: 0;
             display: flex;
             flex-direction: column;
-            gap: 15px; /* Espaço entre cada linha de idioma */
+            gap: 15px; 
         }
 
         .language-list li {
             display: flex;
-            justify-content: space-between; /* Alinha nome/bandeira à esquerda e score à direita */
+            justify-content: space-between; 
             align-items: center;
         }
 
         .language-name-flag {
             display: flex;
             align-items: center;
-            gap: 10px; /* Espaço entre a bandeira e o nome */
+            gap: 10px; 
         }
 
         .language-flag {
